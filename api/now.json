@@ -1,8 +1,13 @@
 {
     "version": 2,
-    "name": "petgram-server-jesus",
-    "alias": ["petgram-api-jesus2"],
-    "builds": [{ "src": "index.js", "use": "@now/node" }],
+    "name": "petgram-server",
+    "alias": ["petgram-api-jesus"],
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@now/node"
+        }
+    ],
     "routes": [
         {
             "headers": {
