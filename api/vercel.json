@@ -1,11 +1,11 @@
 {
     "version": 2,
-    "name": "petgram-server",
-    "alias": ["petgram-api-jesus"],
+    "name": "petgram-server-jesusgal",
+    "alias": ["petgram-api-jesusgal"],
     "builds": [
         {
             "src": "index.js",
-            "use": "@now/node"
+            "use": "@vercel/node"
         }
     ],
     "routes": [
