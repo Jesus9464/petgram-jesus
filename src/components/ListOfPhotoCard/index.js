@@ -1,12 +1,13 @@
 import React from "react";
 import { PhotoCard } from "../PhotoCard";
 
-export const ListOfPhotoCard = () => {
+export const ListOfPhotoCardComponent = ({ data: { photos = [] } } = {}) => {
   return (
     <ul>
-      {[1, 2, 3, 4, 5].map((item) => (
-        <PhotoCard key={item} id={item} />
-      ))}
+      {photos.map((photo) => {
+        console.log(photo);
+        return <PhotoCard key={photo.id} {...photo} />;
+      })}
     </ul>
   );
 };

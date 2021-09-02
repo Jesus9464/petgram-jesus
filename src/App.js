@@ -1,7 +1,7 @@
 import React from "react";
 import { ListOfCategories } from "./components/ListOfCategories/index";
 import { GlobalStyle } from "./style/GlobalStyle";
-import { ListOfPhotoCard } from "./components/ListOfPhotoCard/index";
+import { ListOfPhotoCard } from "./container/ListOfPhotoCard";
 import Logo from "./components/Logo";
 
 export const App = () => {
@@ -10,7 +10,7 @@ export const App = () => {
       <GlobalStyle />
       <Logo />
       <ListOfCategories />
-      <ListOfPhotoCard />
+      <ListOfPhotoCard categoryId={2} />
     </div>
   );
 };
