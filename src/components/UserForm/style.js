@@ -10,6 +10,9 @@ export const Input = styled.input`
   padding: 8px 4px;
   display: block;
   width: 100%;
+  &[disabled] {
+    opacity: 0.3;
+  }
 `;
 export const Button = styled.button`
   background-color: #8d00ff;
@@ -19,6 +22,11 @@ export const Button = styled.button`
   display: block;
   width: 100%;
   text-align: center;
+  cursor: pointer;
+
+  &[disabled] {
+    opacity: 0.3;
+  }
 `;
 
 export const Title = styled.h2`
@@ -26,5 +34,13 @@ export const Title = styled.h2`
   font-weight: 500;
   padding: 8px 0;
   width: 100%;
+  text-align: center;
+`;
+
+export const Error = styled.span`
+  font-size: 14px;
+  color: red;
+  margin: 10px 0 30px 0;
+  display: block;
   text-align: center;
 `;
