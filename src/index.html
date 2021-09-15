@@ -16,5 +16,21 @@
         <noscript>
             <h3>Esra app necesita Javascript para funcionar</h3>
         </noscript>
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", function () {
+                    navigator.serviceWorker
+                        .register("/service-worker.js")
+                        .then((registration) => {
+                            console.log("SW registrado");
+                        })
+                        .catch((registrationError) => {
+                            console.log(
+                                "Erro de registro " + registrationError
+                            );
+                        });
+                });
+            }
+        </script>
     </body>
 </html>
