@@ -4,7 +4,7 @@ import { UserForm } from "../components/UserForm/index";
 import { RegisterMutation } from "../container/RegistrerMutation";
 import { LoginMutation } from "../container/LoginMutation";
 
-export const NotRegistrerUser = () => {
+export default () => {
   const { activateAuth } = useContext(Context);
   return (
     <>

@@ -4,6 +4,7 @@
     "description": "Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)",
     "main": "index.js",
     "scripts": {
+        "serve:dev": "webpack --mode -development && npx serve dist -s",
         "vercel-build": "npm run build",
         "build": "webpack",
         "lint": "standard",
@@ -51,6 +52,7 @@
         "graphql": "^15.5.2",
         "intersection-observer": "^0.12.0",
         "prettier": "^2.3.2",
+        "prop-types": "^15.7.2",
         "react": "^16.8.6",
         "react-apollo": "^3.1.5",
         "react-dom": "^16.8.6",

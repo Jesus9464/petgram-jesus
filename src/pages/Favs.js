@@ -3,7 +3,7 @@ import { GetFavorite } from "../container/GetFavorite";
 import { Helmet } from "react-helmet";
 import { Layout } from "../components/Layout";
 
-export const Favs = () => {
+export default () => {
   return (
     <Layout
       title="Tus favoritos"

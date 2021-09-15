@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { ListOfCategories } from "../components/ListOfCategories/index";
 import { ListOfPhotoCard } from "../container/ListOfPhotoCard";
 import { Layout } from "../components/Layout/index";
 
-export const Home = ({ id }) => {
+const HomeMemo = ({ id }) => {
   return (
     <Layout
       title="Tu app de fotos de mascotas"
@@ -14,3 +14,7 @@ export const Home = ({ id }) => {
     </Layout>
   );
 };
+
+export default React.memo(HomeMemo, (prevProps, props) => {
+  return prevProps.id === props.id;
+});

@@ -5,7 +5,7 @@ import { useCategoryData } from "../../hooks/useCategoryData";
 import ClipLoader from "react-spinners/ClipLoader";
 import { override } from "../../hooks/styleLoader/style";
 
-export const ListOfCategories = () => {
+const ListOfCategoriesComponent = () => {
   const { categories, loading } = useCategoryData();
   const [showFixed, setShowFixed] = useState(false);
 
@@ -45,3 +45,5 @@ export const ListOfCategories = () => {
     </Fragment>
   );
 };
+
+export const ListOfCategories = React.memo(ListOfCategoriesComponent);
